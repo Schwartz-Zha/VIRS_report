@@ -76,5 +76,7 @@ It turns out that when intalling cuda, it will also install a linux-friendly Nvi
 
   Meanwhile, make sure your default 'pip install' is pointing to the new python3.6 interpreter. Very possibly it's not, you need to find a way to change it.
 
-  Also, other necessary python develop tools like 'sudo apt install python3-dev' now should be 'sudo apt install python3.6-dev'
+  Also, other necessary python develop tools like 'sudo apt install python3-dev' now should be 'sudo apt install python3.6-dev'.
+
+  Well, after doing this, perhaps your termal won't launch. It's quite annoying that the terminal nowadays actually depends on python to run, if you are working under a desktop environment but not a real server. To solve this, you may have to revert back to your system default python interpreter. To do this, you may have to understand how to launch a real terminal in a desktop environment, not the usual simulated terminal.
     
