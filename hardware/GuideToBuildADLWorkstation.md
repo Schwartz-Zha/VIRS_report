@@ -53,6 +53,7 @@ This guide tries to gather necessary information for assembly every part of a PC
 
 ## Installation Guide
 * It's generally not recommended to download a very new version of [Ubuntu server](https://ubuntu.com/download/server). For me, I found the Ubuntu server 18.04 now turns to a 'live' installler, causing installation failure for me. I use the 16.04 LTS.
+* 
 * Install the Nvidia GPU driver. You don't really need the newest driver to do deep learning, actually most of the driver updates are for better gaming experience. My driver version is 418.87.00, while the latest one should 430.xx.xx If youy are not sure what version is suitable, open a [Google Colab](https://colab.research.google.com/), use the command 
 
   ```python
@@ -67,3 +68,5 @@ This is a long and complex way to install, while perhaps the newest cuda version
 conda install pytorch torchvision cudatoolkit=10.1 -c pytorch
 ```  
 It turns out that when intalling cuda, it will also install a linux-friendly Nvidia driver automatically.
+
+* For multi-user situation, it's recommened to install a [Docker Engine](https://docs.docker.com/install/linux/docker-ce/ubuntu/) on the Linux server, because it virtualizes the Operating System so that now no user can even break the OS in a theoretically possible way. It also isolates the OS from virus amd worm attack.
