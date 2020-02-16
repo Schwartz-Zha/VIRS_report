@@ -70,3 +70,11 @@ conda install pytorch torchvision cudatoolkit=10.1 -c pytorch
 It turns out that when intalling cuda, it will also install a linux-friendly Nvidia driver automatically.
 
 * For multi-user situation, it's recommened to install a [Docker Engine](https://docs.docker.com/install/linux/docker-ce/ubuntu/) on the Linux server, because it virtualizes the Operating System so that now no user can even break the OS in a theoretically possible way. It also isolates the OS from virus amd worm attack.
+* Another problem met by most of Ubuntu16.04 user is that the defualt python version is python 2.7, even explicitly installed python3 is only 3.5, which is not new enough for most of the popular development -- python >= 3.6
+
+  So it's very important to change the default python interpreter version of this system. [Stackoverflow](https://stackoverflow.com/questions/43621584/why-cant-i-install-python3-6-dev-on-ubuntu16-04)
+
+  Meanwhile, make sure your default 'pip install' is pointing to the new python3.6 interpreter. Very possibly it's not, you need to find a way to change it.
+
+  Also, other necessary python develop tools like 'sudo apt install python3-dev' now should be 'sudo apt install python3.6-dev'
+    
