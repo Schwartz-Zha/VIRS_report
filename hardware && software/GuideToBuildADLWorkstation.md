@@ -16,7 +16,7 @@ I put the link of every item on Amazon basically because I want the link to be v
 
   Also, if you are building a multi-gpu workstation, then you'd better choose turbo coolingh GPU. Fan-cooling will be good for a single GPU but pretty bad for cooling multiple GPUs. You will understand this if you actually see how a motherboard looks like, usually there is less than 5mm between 2 neighboring GPUs. Fan-cooling will always make one GPU take all heat from the other beneath it. Another choice is [Gigabyte 2080ti turbo](https://www.gigabyte.com/ca/Graphics-Card/GV-N208TTURBO-11GC-rev-10#kf).
 
-  Besides, the cost on GPU should be over 60% of the total. But typically the GPU preferred by deep learning researchers are way more expensive than the common choice of computer gamers. So the price of these GPU may vary a lot, because very few customers will choose it. And it's highly recommended to look around in your local computer components shops before puuchase it online. Usually the prices in physical shops are even much lower than that on Amazon. For example, I purchased the ASUS 2080ti turbo in [Mike's Computer Shop](https://mikescomputershop.com/) with around 1300 CAD, while on Amazon the price is now higher than 2000 CAD.
+  Besides, the cost on GPU should be over 60% of the total. But typically the GPU preferred by deep learning researchers are way more expensive than the common choice of computer gamers. So the price of these GPU may vary a lot, because very few customers will choose it. And it's highly recommended to look around in your local computer component shops before purchase it online. Usually the prices in physical shops are even much lower than that on Amazon. For example, I purchased the ASUS 2080ti turbo in [Mike's Computer Shop](https://mikescomputershop.com/) for around 1300 CAD, while on Amazon the price is now higher than 2000 CAD.
 
 * Motherboard: Gigabyte X299 Auros master [Amazon](https://www.amazon.ca/GIGABYTE-X299-AORUS-Master-Motherboards/dp/B07KZGRCV3/ref=sr_1_5?keywords=auros+master&qid=1581823394&sr=8-5)
   
@@ -48,12 +48,12 @@ This guide tries to gather necessary information for assembly every part of a PC
 * [Install the GPU](https://www.youtube.com/watch?v=HoLv2s23mMQ)
 * [Arrange all the wires](https://www.youtube.com/watch?v=UixqA7Exk_I)
   
-  You need some patience on this, make sure read your motherboard mannual, PSU mannual and case mannual before doing this. For example, it took me a long time to realize SATA power is different from SATA, the dormer is on PSU while the latter is on motherboard.
-* Power on. Hopefully you will succeed all at once, but that doesn't ususlly happen. You need to look for professional experts if you cannot figure out which wire is connected to a wrong place.  
+  You need some patience on this, make sure read your motherboard mannual, PSU mannual and case mannual before doing this. For example, it took me a long time to realize SATA power is different from SATA, the former is on PSU while the latter is on motherboard.
+* Power on. Hopefully you will succeed all at once, but that doesn't usually happen. You need to look for professional experts if you cannot figure out which wire is connected to a wrong place.  
 
 ## Installation Guide
-* It's generally not recommended to download a very new version of [Ubuntu server](https://ubuntu.com/download/server). For me, I found the Ubuntu server 18.04 now turns to a 'live' installler, causing installation failure for me. I use the 16.04 LTS.
-* 
+* It's generally not recommended to download a very new version of [Ubuntu server](https://ubuntu.com/download/server). For me, I found the Ubuntu server 18.04 now turns to a 'live' installler, causing installation failure. I use the 16.04 LTS.
+
 * Install the Nvidia GPU driver. You don't really need the newest driver to do deep learning, actually most of the driver updates are for better gaming experience. My driver version is 418.87.00, while the latest one should 430.xx.xx If youy are not sure what version is suitable, open a [Google Colab](https://colab.research.google.com/), use the command 
 
   ```python
@@ -63,7 +63,7 @@ This guide tries to gather necessary information for assembly every part of a PC
 * Install CUDA. This is necessary for every deep learning frame like Pytorch. The [official cuda doc](https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html) lists several ways to do this in detail.
 * Install cudnn, following this [official doc](https://docs.nvidia.com/deeplearning/sdk/cudnn-install/index.html)
 
-This is a long and complex way to install, while perhaps the newest cuda version you just installed is not supported by Pytorch or Tensorflow. An much easier way is just to install pytorch, cuda together by conda, with this command
+This is a long and complex way to install everything, while perhaps the newest cuda version you just installed is not supported by Pytorch or Tensorflow. An much easier way is just to install pytorch, cuda all together by conda or pip, with this command which you should be able to find at the official PyTorch website.
 ```shell
 conda install pytorch torchvision cudatoolkit=10.1 -c pytorch
 ```  
@@ -78,5 +78,5 @@ It turns out that when intalling cuda, it will also install a linux-friendly Nvi
 
   Also, other necessary python develop tools like 'sudo apt install python3-dev' now should be 'sudo apt install python3.6-dev'.
 
-  Well, after doing this, perhaps your termal won't launch. It's quite annoying that the terminal nowadays actually depends on python to run, if you are working under a desktop environment but not a real server. To solve this, you may have to revert back to your system default python interpreter. To do this, you may have to understand how to launch a real terminal in a desktop environment, not the usual simulated terminal.
+  Well, after doing this, perhaps your termal won't launch. It's quite annoying that the terminal (actually terminal simulator) nowadays actually depends on python to run, if you are working under a desktop environment but not a real server. To solve this, you may have to revert back to your system default python interpreter. To do this, you may have to understand how to launch a real terminal in a desktop environment, not the usual simulated terminal.
     
