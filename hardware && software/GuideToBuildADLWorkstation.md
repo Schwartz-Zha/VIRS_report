@@ -34,7 +34,7 @@ I put the link of every item on Amazon basically because I want the link to be v
 
 * Case: Corsair Carbide Series Air 540 High Airflow ATX Cube Case CC-9011030-WW - Black [Amazon](https://www.amazon.ca/Corsair-Carbide-High-Airflow-CC-9011030-WW/dp/B00D6GINF4/ref=sr_1_8?crid=28BM1OFBFX3CN&keywords=corsair+atx+case&qid=1581829077&sprefix=corsair+ATX%2Caps%2C205&sr=8-8)
   
-  Not every case is able to hold 4 GPU and the 1600w PSU. This case is also very good for cooling, and easy for arranmging wires. Besdes, this case also has plenty of place to hold many peripheral hard disks, enough for usual laboratory use. Besides, not every case provides snough space for a 280mm CPU water cooler.
+  Not every case is able to hold 4 GPU and the 1600w PSU. This case is also very good for cooling, and easy for arranmging wires. Besdes, this case also has plenty of place to hold many peripheral hard disks, enough for usual laboratory use. Besides, not every case provides enough space for a 280mm CPU water cooler.
 * PSU: ROSEWILL Gaming 80 Plus Gold 1600W Power Supply [Amazon](https://www.amazon.ca/ROSEWILL-HERCULES-Certified-Extra-long-CrossFire/dp/B00PCLGZOC/ref=sr_1_7?keywords=power+1600w&qid=1581829211&sr=8-7)
   
   1600w is necessary for 4 GPUs. 1500w will cause the motherboard shutdown accidentally due to power undersupply.
